@@ -1,5 +1,7 @@
 <?php 
 
+// Group Members: Tony Nguyen, Zoha Imtiaz 
+
 include 'data.inc.php';
 
 ?>
@@ -14,7 +16,7 @@ include 'data.inc.php';
 <body>
     
 <main>
-<form class="form" id="mainForm">
+<form class="form" id="mainForm" method="post" action="art-process.php">
    <fieldset class="form__panel">
       <legend class="form__heading">Edit Art Work Details</legend>
         <p class="form__row">
@@ -29,6 +31,7 @@ include 'data.inc.php';
            <label>Genre</label><br/>
            <select name="genre" class="form__input form__select">
               <option>Choose genre</option> 
+              <?= buildOptions ($genres) ?>
 
            </select>
        </p>
@@ -36,6 +39,7 @@ include 'data.inc.php';
            <label>Subject</label><br/>
            <select name="subject" class="form__input form__select">
               <option>Choose subject</option> 
+               <?= buildOptions ($subjects) ?>
 
            </select>
        </p>

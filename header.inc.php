@@ -1,3 +1,5 @@
+//** Group Members: Tony Nguyen, Zoha Imtiaz  */
+
 <header class="header">  
   <div class="header__wrapper">
     <h1 class="header__heading">Art Store</h1>

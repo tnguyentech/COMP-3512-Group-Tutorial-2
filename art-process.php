@@ -1,4 +1,5 @@
 <?php 
+// Group Members: Tony Nguyen, Zoha Imtiaz 
 
 include 'data.inc.php';
 
@@ -22,7 +23,7 @@ include 'data.inc.php';
       <caption class="results__caption">Art Work Saved</caption>
       <tr>
         <td class="results__label">Title</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['title'] ?> </td> 
       </tr>
       <tr>
         <td class="results__label">Description</td>    
