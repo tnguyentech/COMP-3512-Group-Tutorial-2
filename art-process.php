@@ -3,6 +3,12 @@
 
 include 'data.inc.php';
 
+if ($_SERVER ['REQUEST_METHOD'] !== 'POST') {
+  echo "No Form Data ...";
+  echo "<a href='ch12-proj2.php'> go to form </a>";
+  echo "and enter data";
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,27 +33,27 @@ include 'data.inc.php';
       </tr>
       <tr>
         <td class="results__label">Description</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['description'] ?> </td> 
       </tr>
       <tr>
         <td class="results__label">Genre</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['label'] ?> </td> 
       </tr>
       <tr>
         <td class="results__label">Subject</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['subject'] ?> </td> 
       </tr>
       <tr>
         <td class="results__label">Medium</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['medium'] ?> </td> 
       </tr>   
       <tr>
         <td class="results__label">Year</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['year'] ?> </td> 
       </tr>  
       <tr>
         <td class="results__label">Museum</td>    
-        <td class="results__value"> </td> 
+        <td class="results__value"><?= $_POST ['museum'] ?> </td> 
       </tr>          
     </table>
     
