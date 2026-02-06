@@ -2,6 +2,8 @@
 // Group Members: Tony Nguyen, Zoha Imtiaz 
 
 include 'data.inc.php';
+include 'header.inc.php';
+
 
 if ($_SERVER ['REQUEST_METHOD'] !== 'POST') {
   echo "No Form Data ...";
@@ -71,3 +73,4 @@ if ($title === "") {
 </main>       
 </body>
 </html>
+
