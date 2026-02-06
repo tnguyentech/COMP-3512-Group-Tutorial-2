@@ -17,7 +17,7 @@ include 'data.inc.php';
                       echo "<li class='navigation__list-item'>
                               <a href='$url'>$text</a>
                             </li>";
-                        }
+                    }
         ?>
       </ul>
     </nav>  
