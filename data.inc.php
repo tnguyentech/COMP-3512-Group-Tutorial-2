@@ -10,4 +10,14 @@ $links = [
 
 ];
 
+$genres = ["Abstract", "Baroque", "Gothic", "Renaissance"];
+$subjects = ["Animals", "Landscape", "People"];
+
+function buildOptions($array) {
+   $output = "";
+   foreach ($array as $value) {
+      $output .= "<option>$value</option>";
+   }
+   return $output;
+}
 ?>
