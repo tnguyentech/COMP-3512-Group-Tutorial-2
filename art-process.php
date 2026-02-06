@@ -7,6 +7,15 @@ if ($_SERVER ['REQUEST_METHOD'] !== 'POST') {
   echo "No Form Data ...";
   echo "<a href='ch12-proj2.php'> go to form </a>";
   echo "and enter data";
+  exit;
+}
+
+$title = trim($_POST ['title']);
+
+if ($title === "") {
+  echo "Title is required.";
+  echo "<a href='ch12-proj2.php'> go to form </a>";
+  exit;
 }
 
 ?>
