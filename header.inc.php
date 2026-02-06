@@ -6,9 +6,13 @@
     <nav class="navigation">
       <ul class="navigation__list">
         <?php
+
         /* write loop to generate list items as follows: 
             <li class='navigation__list-item'><a href='index.php'>Home</a></li> */
-
+            $links = [
+              'Home' => 'index.php',
+              'Browse' => 'browse.php',
+              'About' => 'about.php' ];
         ?>
       </ul>
     </nav>  
