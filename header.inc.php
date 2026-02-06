@@ -12,7 +12,19 @@
             $links = [
               'Home' => 'index.php',
               'Browse' => 'browse.php',
-              'About' => 'about.php' ];
+              'About' => 'about.php' 
+              ];
+          <header class="header">  
+            <div class="header__wrapper">
+              <h1 class="header__heading">Art Store</h1>
+              <nav class="navigation">
+                <ul class="navigation__list">
+                  <?php
+                    foreach ($links as $text => $url) {
+                      echo "<li class='navigation__list-item'>
+                              <a href='$url'>$text</a>
+                            </li>";
+          }
         ?>
       </ul>
     </nav>  
